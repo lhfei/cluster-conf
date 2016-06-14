@@ -1,0 +1,72 @@
+
++ Clean NN & DN data:
+
+	rm -rf /letv/hadoop/hdfs/*
+	rm -rf /var/hadoop/hdfs/*
+	rm -rf /data/slot0/hadoop/hdfs/*
+	rm -rf /data/slot1/hadoop/hdfs/*
+	rm -rf /data/slot2/hadoop/hdfs/*
+	rm -rf /data/slot3/hadoop/hdfs/*
+	rm -rf /data/slot4/hadoop/hdfs/*
+	rm -rf /data/slot5/hadoop/hdfs/*
+	rm -rf /data/slot6/hadoop/hdfs/*
+	rm -rf /data/slot7/hadoop/hdfs/*
+	rm -rf /data/slot8/hadoop/hdfs/*
+	rm -rf /data/slot9/hadoop/hdfs/*
+	rm -rf /data/slota/hadoop/hdfs/*
+	rm -rf /data/slotb/hadoop/hdfs/*
+
+
+fW+ug3dz1w9XGYaCApy5
+
+useradd cloudland -d /home/cloudland -s /bin/bash
+
+
+cloudland    ALL=(ALL)   ALL
+
+
+Letvcloud@01
+
+
+yum install ntp rsync unzip redhat-lsb whois
+
+
+export http_proxy="http://10.180.86.30:3128"
+
+
+mkdir /usr/local/cloud
+
+chown -R cloudland:cloudland /usr/local/cloud
+
+
+
+-----------------------------------------------------------------------
+
+cd  /usr/local/cloud
+
+mkdir java maven groovy 
+
+
+JAVA_HOME=/usr/local/cloud/java/jdk1.8.0_65
+JRE_HOME=$JAVA_HOME/jre
+
+
+
+mkdir app_sdk app_server app_backup app_data app_tmp app_jobs
+
+
+/usr/local/cloud/java/jdk1.8.0_65
+
+10.148.10.84
+
+wget http://public-repo-1.hortonworks.com/HDP/tools/2.3.2.0/hdp_manual_install_rpm_helper_files-2.3.2.0.2950.tar.gz
+
+
+
+ambari-server setup --jdbc-db=mysql --jdbc-driver=/data/slot0/cloudland/app_sdk/mysql/mysql-connector-java-5.1.37-bin.jar
+
+
+353113ea7530d81fc9b03884f13e1beba883d62a4a0714a154995d3dc5ef4db2bd477b73e5eaa4db
+
+b28aa838b263272de79f0b7f11a00128c5e5d33254024aa0789c85221c6298971f94388e3d67d764
+

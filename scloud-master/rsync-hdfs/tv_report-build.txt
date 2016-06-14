@@ -1,0 +1,551 @@
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppInstall
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppInstall
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppInstall
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppUninstall
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppUninstall
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppUninstall
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppStartup
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppStartup
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppStartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Bootstrap
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Bootstrap
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Bootstrap
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/EndPlay
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/EndPlay
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Heartbeat
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Heartbeat
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Heartbeat
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/StartPlay
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/StartPlay
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserBaiduSrch
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserBaiduSrch
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserBaiduVideoSrch
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserBaiduVideoSrch
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserHeartbeat
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserHeartbeat
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserLink
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserLink
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserNav
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserNav
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserPlayVideo
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserPlayVideo
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserStartup
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserStartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/CdnDispatch
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/CdnDispatch
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/ErrLog
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerAction
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerHeartbeat
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerStartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvBlock
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvBlock
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvBlock
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvChSwitch
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvChSwitch
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvChSwitch
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvEnd
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvEnd
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvEnd
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvEnv
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvEnv
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvEnv
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvInit
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvInit
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvInit
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvPlay
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvPlay
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvPlay
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvPlistShow
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvPlistShow
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvPlistShow
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvTime
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvTime
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvTime
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/MobileAppBoot
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/MobileAppBoot
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/MobileAppInstall
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/MobileAppInstall
+/user/hive/warehouse/tv_report.db/data/hk/va_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/env_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/er_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/lg_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/op_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/pl_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/pgv_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/qy_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayBlock
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayBlock
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayBlock
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayEnd
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayEnd
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayEnd
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayError
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayError
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayError
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayInit
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayInit
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayInit
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlaySeek
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlaySeek
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlaySeek
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayStart
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayStart
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayStart
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayTime
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayTime
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayTime
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppCrash
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppDur
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppPageJump
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppStartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkCustomEvent
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Shutdown
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Shutdown
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Shutdown
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Surf
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Surf
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Surf
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvAction
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/TvAction
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvAction
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusEnd
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusEnd
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusInit
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusInit
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusPlay
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusPlay
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusTime
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusTime
+/user/hive/warehouse/tv_report.db/data/land/rc/201512/20151211/TvRemoterBtn
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/TvRemoterBtn
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvRemoterBtn
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpDownloadFinish
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpDownloadFinish
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpDownloadFinish
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpDownloadStartup
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpDownloadStartup
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpDownloadStartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpFinish
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpFinish
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpFinish
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppInstall		    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppInstall                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppInstall                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppUninstall                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppUninstall                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppUninstall                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppStartup                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppStartup                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppStartup                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Bootstrap                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Bootstrap                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Bootstrap                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/EndPlay                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/EndPlay                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Heartbeat                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Heartbeat                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Heartbeat                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/StartPlay                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/StartPlay                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserBaiduSrch             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserBaiduSrch               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserBaiduVideoSrch        /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserBaiduVideoSrch          /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserHeartbeat             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserHeartbeat               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserLink                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserLink                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserNav                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserNav                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserPlayVideo             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserPlayVideo               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserStartup               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserStartup                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/CdnDispatch                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/CdnDispatch                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/ErrLog                         /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerAction                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerHeartbeat                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerStartup                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvBlock                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvBlock                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvBlock                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvChSwitch                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvChSwitch                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvChSwitch                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvEnd                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvEnd                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvEnd                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvEnv                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvEnv                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvEnv                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvInit                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvInit                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvInit                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvPlay                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvPlay                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvPlay                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvPlistShow                /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvPlistShow                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvPlistShow                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvTime                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvTime                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvTime                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/MobileAppBoot                /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/MobileAppBoot                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/MobileAppInstall             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/MobileAppInstall               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/va_rc/201601/20160117                             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/env_rc/201601/20160117                            /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/er_rc/201601/20160117                             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/lg_rc/201601/20160117                             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/op_rc/201601/20160117                             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/pl_rc/201601/20160117                             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/pgv_rc/201601/20160117                            /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/qy_rc/201601/20160117                             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayBlock                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayBlock                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayBlock                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayEnd                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayEnd                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayEnd                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayError                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayError                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayError                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayInit                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayInit                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayInit                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlaySeek                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlaySeek                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlaySeek                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayStart                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayStart                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayStart                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayTime                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayTime                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayTime                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppCrash                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppDur                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppPageJump               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppStartup                /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkCustomEvent               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Shutdown                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Shutdown                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Shutdown                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Surf                         /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Surf                           /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Surf                           /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvAction                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/TvAction                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvAction                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusEnd                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusEnd                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusInit                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusInit                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusPlay                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusPlay                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusTime                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusTime                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201512/20151211/TvRemoterBtn                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/TvRemoterBtn                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvRemoterBtn                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpDownloadFinish             /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpDownloadFinish               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpDownloadFinish               /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpDownloadStartup            /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpDownloadStartup              /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpDownloadStartup              /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpFinish                     /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpFinish                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpFinish                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+                                                                                            /user/cloudland/warehouse/tv/datamarts/tv_report.db/
+
+
+
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppInstall              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/appinstall
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppInstall                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/appinstall
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppInstall                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/appinstall
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppUninstall            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/appuninstall
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppUninstall              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/appuninstall
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppUninstall              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/appuninstall
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/AppStartup              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/appstartup
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/AppStartup                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/appstartup
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/AppStartup                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/appstartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Bootstrap               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/bootstrap
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Bootstrap                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/bootstrap
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Bootstrap                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/bootstrap
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/EndPlay                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/endplay
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/EndPlay                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/endplay
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Heartbeat               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/heartbeat
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Heartbeat                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/heartbeat
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Heartbeat                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/heartbeat
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/StartPlay               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/startplay
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/StartPlay                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/startplay
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserBaiduSrch        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserbaidusrch
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserBaiduSrch          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserbaidusrch
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserBaiduVideoSrch   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserbaiduvideosrch
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserBaiduVideoSrch     /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserbaiduvideosrch
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserHeartbeat        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserheartbeat
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserHeartbeat          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserheartbeat
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserLink             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserlink
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserLink               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserlink
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserNav              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browsernav
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserNav                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browsernav
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserPlayVideo        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserplayvideo
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserPlayVideo          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserplayvideo
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/BrowserStartup          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserstartup
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/BrowserStartup            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserstartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/CdnDispatch             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/cdndispatch
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/CdnDispatch               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/cdndispatch
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/ErrLog                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/errlog
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerAction               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/geraction
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerHeartbeat            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/gerheartbeat
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/GerStartup              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/gerstartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvBlock               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvblock
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvBlock                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvblock
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvBlock                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvblock
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvChSwitch            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvchswitch
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvChSwitch              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvchswitch
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvChSwitch              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvchswitch
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvEnd                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvend
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvEnd                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvend
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvEnd                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvend
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvEnv                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvenv
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvEnv                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvenv
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvEnv                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvenv
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvInit                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvinit
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvInit                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvinit
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvInit                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvinit
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvPlay                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvplay
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvPlay                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvplay
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvPlay                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvplay
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvPlistShow           /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvplistshow
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvPlistShow             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvplistshow
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvPlistShow             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvplistshow
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/LetvTime                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvtime
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/LetvTime                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvtime
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/LetvTime                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvtime
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/MobileAppBoot           /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/mobileappboot
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/MobileAppBoot             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/mobileappboot
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/MobileAppInstall        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/mobileappinstall
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/MobileAppInstall          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/mobileappinstall
+/user/hive/warehouse/tv_report.db/data/hk/va_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/va_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/env_rc/201601/20160117                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/env_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/er_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/er_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/lg_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/lg_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/op_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/op_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/pl_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/pl_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/pgv_rc/201601/20160117                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/pgv_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/hk/qy_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/qy_rc/201601/20160117
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayBlock               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playblock
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayBlock                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playblock
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayBlock                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playblock
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayEnd                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playend
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayEnd                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playend
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayEnd                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playend
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayError               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playerror
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayError                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playerror
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayError                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playerror
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayInit                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playinit
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayInit                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playinit
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayInit                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playinit
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlaySeek                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playseek
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlaySeek                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playseek
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlaySeek                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playseek
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayStart               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playstart
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayStart                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playstart
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayStart                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playstart
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/PlayTime                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playtime
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/PlayTime                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playtime
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/PlayTime                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playtime
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppCrash             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkappcrash
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppDur               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkappdur
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppPageJump          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkapppagejump
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkAppStartup           /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkappstartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/SdkCustomEvent          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkcustomevent
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Shutdown                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/shutdown
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Shutdown                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/shutdown
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Shutdown                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/shutdown
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/Surf                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/surf
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/Surf                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/surf
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/Surf                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/surf
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvAction                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvaction
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/TvAction                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/tvaction
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvAction                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvaction
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusEnd               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvplusend
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusEnd                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvplusend
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusInit              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvplusinit
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusInit                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvplusinit
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusPlay              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvplusplay
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusPlay                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvplusplay
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/TvplusTime              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvplustime
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvplusTime                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvplustime
+/user/hive/warehouse/tv_report.db/data/land/rc/201512/20151211/TvRemoterBtn            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201512/20151211/tvremoterbtn
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/TvRemoterBtn              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/tvremoterbtn
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/TvRemoterBtn              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvremoterbtn
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpDownloadFinish        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/updownloadfinish
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpDownloadFinish          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/updownloadfinish
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpDownloadFinish          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/updownloadfinish
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpDownloadStartup       /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/updownloadstartup
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpDownloadStartup         /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/updownloadstartup
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpDownloadStartup         /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/updownloadstartup
+/user/hive/warehouse/tv_report.db/data/land/rc/201601/20160101/UpFinish                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/upfinish
+/user/hive/warehouse/tv_report.db/data/hk/rc/201601/20160101/UpFinish                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/upfinish
+/user/hive/warehouse/tv_report.db/data/us/rc/201601/20160101/UpFinish                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/upfinish
+
+
+
+
+
+
+
+
+
+
+
+
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/AppInstall              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/appinstall
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/AppInstall                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/appinstall
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/AppInstall                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/appinstall
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/AppUninstall            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/appuninstall
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/AppUninstall              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/appuninstall
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/AppUninstall              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/appuninstall
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/AppStartup              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/appstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/AppStartup                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/appstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/AppStartup                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/appstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/Bootstrap               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/bootstrap
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/Bootstrap                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/bootstrap
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/Bootstrap                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/bootstrap
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/EndPlay                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/endplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/EndPlay                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/endplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/Heartbeat               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/heartbeat
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/Heartbeat                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/heartbeat
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/Heartbeat                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/heartbeat
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/StartPlay               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/startplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/StartPlay                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/startplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/BrowserBaiduSrch        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserbaidusrch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/BrowserBaiduSrch          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserbaidusrch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/BrowserBaiduVideoSrch   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserbaiduvideosrch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/BrowserBaiduVideoSrch     /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserbaiduvideosrch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/BrowserHeartbeat        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserheartbeat
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/BrowserHeartbeat          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserheartbeat
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/BrowserLink             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserlink
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/BrowserLink               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserlink
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/BrowserNav              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browsernav
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/BrowserNav                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browsernav
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/BrowserPlayVideo        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserplayvideo
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/BrowserPlayVideo          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserplayvideo
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/BrowserStartup          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/browserstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/BrowserStartup            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/browserstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/CdnDispatch             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/cdndispatch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/CdnDispatch               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/cdndispatch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/ErrLog                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/errlog
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/GerAction               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/geraction
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/GerHeartbeat            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/gerheartbeat
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/GerStartup              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/gerstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/LetvBlock               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvblock
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/LetvBlock                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvblock
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/LetvBlock                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvblock
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/LetvChSwitch            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvchswitch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/LetvChSwitch              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvchswitch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/LetvChSwitch              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvchswitch
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/LetvEnd                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvend
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/LetvEnd                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvend
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/LetvEnd                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvend
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/LetvEnv                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvenv
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/LetvEnv                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvenv
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/LetvEnv                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvenv
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/LetvInit                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvinit
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/LetvInit                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvinit
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/LetvInit                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvinit
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/LetvPlay                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/LetvPlay                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/LetvPlay                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/LetvPlistShow           /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvplistshow
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/LetvPlistShow             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvplistshow
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/LetvPlistShow             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvplistshow
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/LetvTime                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/letvtime
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/LetvTime                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/letvtime
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/LetvTime                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/letvtime
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/MobileAppBoot           /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/mobileappboot
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/MobileAppBoot             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/mobileappboot
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/MobileAppInstall        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/mobileappinstall
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/MobileAppInstall          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/mobileappinstall
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/va_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/va_rc/201601/20160117
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/env_rc/201601/20160117                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/env_rc/201601/20160117
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/er_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/er_rc/201601/20160117
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/lg_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/lg_rc/201601/20160117
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/op_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/op_rc/201601/20160117
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/pl_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/pl_rc/201601/20160117
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/pgv_rc/201601/20160117                       /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/pgv_rc/201601/20160117
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/qy_rc/201601/20160117                        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/qy_rc/201601/20160117
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/PlayBlock               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playblock
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/PlayBlock                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playblock
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/PlayBlock                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playblock
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/PlayEnd                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playend
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/PlayEnd                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playend
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/PlayEnd                   /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playend
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/PlayError               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playerror
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/PlayError                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playerror
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/PlayError                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playerror
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/PlayInit                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playinit
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/PlayInit                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playinit
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/PlayInit                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playinit
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/PlaySeek                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playseek
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/PlaySeek                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playseek
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/PlaySeek                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playseek
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/PlayStart               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playstart
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/PlayStart                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playstart
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/PlayStart                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playstart
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/PlayTime                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/playtime
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/PlayTime                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/playtime
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/PlayTime                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/playtime
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/SdkAppCrash             /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkappcrash
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/SdkAppDur               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkappdur
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/SdkAppPageJump          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkapppagejump
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/SdkAppStartup           /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkappstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/SdkCustomEvent          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/sdkcustomevent
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/Shutdown                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/shutdown
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/Shutdown                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/shutdown
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/Shutdown                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/shutdown
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/Surf                    /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/surf
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/Surf                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/surf
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/Surf                      /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/surf
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/TvAction                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvaction
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/TvAction                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/tvaction
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/TvAction                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvaction
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/TvplusEnd               /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvplusend
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/TvplusEnd                 /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvplusend
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/TvplusInit              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvplusinit
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/TvplusInit                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvplusinit
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/TvplusPlay              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvplusplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/TvplusPlay                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvplusplay
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/TvplusTime              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/tvplustime
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/TvplusTime                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvplustime
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201512/20151211/TvRemoterBtn            /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201512/20151211/tvremoterbtn
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/TvRemoterBtn              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/tvremoterbtn
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/TvRemoterBtn              /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/tvremoterbtn
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/UpDownloadFinish        /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/updownloadfinish
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/UpDownloadFinish          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/updownloadfinish
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/UpDownloadFinish          /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/updownloadfinish
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/UpDownloadStartup       /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/updownloadstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/UpDownloadStartup         /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/updownloadstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/UpDownloadStartup         /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/updownloadstartup
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/land/rc/201601/20160101/UpFinish                /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/land/rc/201601/20160101/upfinish
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/hk/rc/201601/20160101/UpFinish                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/hk/rc/201601/20160101/upfinish
+${hname}/bin/hadoop distcp -update -skipcrccheck ${origin}/${schema}.db/data/us/rc/201601/20160101/UpFinish                  /user/cloudland/warehouse/tv/datamarts/tv_report.db/data/us/rc/201601/20160101/upfinish

@@ -1,0 +1,207 @@
+#!/bin/bash
+
+#schema="tv_report"
+uhome="hdfs://basic.internal.hadoop.10-148-10-10.scloud.letv.com:8020/user/cloudland/warehouse/tv/datamarts"
+hname="/usr/hdp/2.3.2.0-2950/hadoop"
+tables_list_path="/letv/cloudland/app_jobs/rsync-hdfs"
+destination="hdfs://centos10-10.letv.cn:8020/user/cloudland/warehouse"
+origin="hftp://10.149.10.99:50070/user/hive/warehouse"
+
+# check parameters: 
+if (("$#" != 3))
+then
+  echo "$(date) error: Schema and start, end range must be assigned. And the start must be less then the end."
+  echo "Usage: ./<schema>_init_data.sh <schema> 1 1"
+  exit 1
+fi
+
+schema=$1
+start=$2
+end=$3
+
+echo "====$(date) Range is [${start}, ${end}] ===="
+
+for ((i=${start}; i<=${end}; i++))
+do
+  #current=$(date +%Y%m%d -d -${i}day)
+  y_m=$(date +%Y%m -d -${i}day)     #format data: year and month.
+  y_m_d=$(date +%Y%m%d -d -${i}day)   #format data: year,month and day.
+  
+  echo "=====$(date) current is [${y_m} == ${y_m_d}] ===="
+
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/appinstall/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/appinstall/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/appinstall/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "  
+
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/appuninstall/*'       INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/appuninstall/*'         INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/appuninstall/*'         INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/appstartup/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/appstartup/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/appstartup/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/bootstrap/*'          INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/bootstrap/*'            INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/bootstrap/*'            INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/endplay/*'            INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/endplay/*'              INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/heartbeat/*'          INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/heartbeat/*'            INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/heartbeat/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/startplay/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/startplay/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/browserbaidusrch/*'     INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/browserbaidusrch/*'       INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/browserbaiduvideosrch/*'  INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/browserbaiduvideosrch/*'    INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/browserheartbeat/*'     INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/browserheartbeat/*'       INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/browserlink/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/browserlink/*'        INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/browsernav/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/browsernav/*'         INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/browserplayvideo/*'     INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/browserplayvideo/*'       INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/browserstartup/*'       INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/browserstartup/*'       INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/cdndispatch/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/cdndispatch/*'        INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/errlog/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/geraction/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/gerheartbeat/*'       INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/gerstartup/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/letvblock/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/letvblock/*'          INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/letvblock/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/letvchswitch/*'       INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/letvchswitch/*'         INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/letvchswitch/*'         INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/letvend/*'          INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/letvend/*'          INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/letvend/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/letvenv/*'          INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/letvenv/*'          INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/letvenv/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/letvinit/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/letvinit/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/letvinit/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/letvplay/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/letvplay/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/letvplay/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/letvplistshow/*'      INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/letvplistshow/*'        INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/letvplistshow/*'        INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/letvtime/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/letvtime/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/letvtime/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/mobileappboot/*'      INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/mobileappboot/*'        INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/mobileappinstall/*'     INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/mobileappinstall/*'       INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/playblock/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/playblock/*'          INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/playblock/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/playend/*'          INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/playend/*'          INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/playend/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/playerror/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/playerror/*'          INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/playerror/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/playinit/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/playinit/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/playinit/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/playseek/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/playseek/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/playseek/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/playstart/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/playstart/*'          INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/playstart/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/playtime/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/playtime/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/playtime/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/sdkappcrash/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/sdkappdur/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/sdkapppagejump/*'       INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/sdkappstartup/*'      INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/sdkcustomevent/*'       INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/shutdown/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/shutdown/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/shutdown/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/surf/*'           INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/surf/*'             INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/surf/*'             INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/tvaction/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/tvaction/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/tvaction/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/tvplusend/*'        INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/tvplusend/*'          INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/tvplusinit/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/tvplusinit/*'         INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/tvplusplay/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/tvplusplay/*'         INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/tvplustime/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/tvplustime/*'         INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/201512/20151211/tvremoterbtn/*'       INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/tvremoterbtn/*'         INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/tvremoterbtn/*'         INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/updownloadfinish/*'     INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/updownloadfinish/*'       INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/updownloadfinish/*'       INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/updownloadstartup/*'    INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/updownloadstartup/*'      INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/updownloadstartup/*'      INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); " 
+  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/land/rc/${y_m}/${y_m_d}/upfinish/*'         INTO TABLE tv_report.appinstall PARTITION (area='land', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/hk/rc/${y_m}/${y_m_d}/upfinish/*'           INTO TABLE tv_report.appinstall PARTITION (area='hk', dt='${y_m_d}'); "  
+  hive -e "LOAD DATA INPATH '${uhome}/${schema}.db/data/us/rc/${y_m}/${y_m_d}/upfinish/*'           INTO TABLE tv_report.appinstall PARTITION (area='us', dt='${y_m_d}'); "  
+
+done

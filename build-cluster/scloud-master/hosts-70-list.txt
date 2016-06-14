@@ -1,0 +1,3 @@
+centos10-71.letv.cn
+centos10-73.letv.cn
+centos10-74.letv.cn

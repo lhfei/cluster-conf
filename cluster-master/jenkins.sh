@@ -1,0 +1,1 @@
+java -Dhttp.proxyHost=10.120.56.175 -Dhttp.proxyPort=231000 -jar jenkins.war

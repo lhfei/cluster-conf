@@ -1,0 +1,11 @@
+sum_did_use_his
+sum_sdk_phone_app_day
+sum_sdk_phone_event_game_day
+sum_sdk_phone_event_props_open_day
+sum_sdk_phone_imei_his_day
+sum_user_act_day
+sum_user_login_env_day
+sum_user_play_summary_day
+sum_user_pv_day
+sum_user_query_day
+sum_user_uuid_play_day

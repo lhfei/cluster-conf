@@ -1,0 +1,58 @@
+<!--
+	RSYNC data.
+	@param from:
+	@param to:
+
+	@since: Dec.29, 2015
+	@author: Hefei Li
+-->
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="event-collect-wf">
+	<start to="collect-node"/>
+
+	<!-- call hive2 job. -->
+	<action name="collect-node">
+		<hive2 xmlns="uri:oozie:hive2-action:0.1">
+			<job-tracker>${jobTracker}</job-tracker>
+			<name-node>${nameNode}</name-node>
+			<configuration>
+				<property>
+					<name>mapred.job.queue.name</name>
+					<value>${queueName}</value>
+				</property>
+			</configuration>
+			<jdbc-url>${jdbcURL}</jdbc-url>			
+			<script>event-collect.q</script>
+			<param>PARTITION=${partition}</param>
+			<archive>/user/cloudland/apps/dev/event-collect/client/brickhouse-0.7.1-SNAPSHOT.jar#brickhouse-0.7.1-SNAPSHOT.jar</archive>
+			<archive>/user/cloudland/apps/dev/event-collect/client/json-serde-1.3.7-jar-with-dependencies.jar#json-serde-1.3.7-jar-with-dependencies.jar</archive>
+		</hive2>
+		<ok to="export-node"/>
+		<error to="fail"/>
+	</action>
+
+	<action name="export-node">
+		<hive2 xmlns="uri:oozie:hive2-action:0.1">
+			<job-tracker>${jobTracker}</job-tracker>
+			<name-node>${nameNode}</name-node>
+			<configuration>
+				<property>
+					<name>mapred.job.queue.name</name>
+					<value>${queueName}</value>
+				</property>
+			</configuration>
+			<jdbc-url>${jdbcURL}</jdbc-url>			
+			<script>event-export.q</script>
+			<param>PARTITION=${partition}</param>
+			<param>YM=${yearMonth}</param>
+			<archive>/user/cloudland/apps/dev/event-collect/client/bigdata-batch-0.0.0.9-SNAPSHOT.jar#bigdata-batch-0.0.0.9-SNAPSHOT.jar</archive>
+			<archive>/user/oozie/share/lib/lib_20151124162414/mysql/mysql-connector-java-5.1.38-bin.jar#mysql-connector-java-5.1.38-bin.jar</archive>
+		</hive2>
+		<ok to="end"/>
+		<error to="fail"/>
+	</action>
+		
+	<kill name="fail">
+		<message>DistCP failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+	</kill>
+	<end name="end"/>
+</workflow-app>

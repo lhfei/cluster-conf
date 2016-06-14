@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coordinator-app name="coord-distcp-wf" frequency="${coord:minutes(1)}" start="2016-01-11T15:00Z" end="2016-01-11T22:00Z" timezone="Asia/Shanghai" xmlns="uri:oozie:coordinator:0.4">
+	<action>
+		<workflow>
+			<app-path>${wfPath}</app-path>
+		</workflow>
+	</action>
+</coordinator-app>

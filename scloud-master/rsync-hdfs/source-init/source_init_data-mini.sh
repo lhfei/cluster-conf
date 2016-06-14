@@ -1,0 +1,32 @@
+#!/bin/bash
+
+schema="source"
+hdfs_nn="hdfs://centos10-10.letv.cn:8020/user/cloudland/warehouse/phone/datamarts"
+
+getArray() {
+    local i=0
+    array=() # Clear array
+    while IFS= read -r line # Read a line
+    do
+        array+=( "$line" ) # Append line to the array
+    done < "$1"
+}
+
+getArray "/letv/cloudland/app_jobs/rsync-hdfs/${schema}-init/${schema}-tables-list-mini.txt"
+
+for tname in "${array[@]}"
+do
+    echo "===== [$tname] start loading ..."
+
+    for d in {60..79}
+    do
+        #current=$(date +%Y%m%d -d -${d}day)
+        current=$d
+
+        echo "=====++++++++ [$tname] partition ${current} data start loading  ..."
+        hql="LOAD DATA INPATH '${hdfs_nn}/${schema}.db/${tname}/${current}/*' INTO TABLE ${schema}.${tname} PARTITION (dt=${current});"
+        echo $hql
+        hive -e "$hql"
+        echo "=====++++++++ [$tname] partition ${current} data loaded  ..."
+    done
+done

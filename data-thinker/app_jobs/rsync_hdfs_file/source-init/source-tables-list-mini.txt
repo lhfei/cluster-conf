@@ -1,0 +1,4 @@
+passport_user_baseinfo
+vip_letv_t_letv_new_order
+vip_letv_t_letv_new_order_hk
+vip_letv_t_letv_userproduct

@@ -1,0 +1,26 @@
+<coordinator-app name="rsync-load-app" frequency="0-59/5 * * * *" start="${start}" end="${end}" timezone="GMT"
+                 xmlns="uri:oozie:coordinator:0.2">
+        <action>
+        <workflow>
+            <app-path>${workflowAppUri}</app-path>
+            <configuration>
+                <property>
+                    <name>jobTracker</name>
+                    <value>${jobTracker}</value>
+                </property>
+                <property>
+                    <name>nameNode</name>
+                    <value>${nameNode}</value>
+                </property>
+                <property>
+                    <name>queueName</name>
+                    <value>${queueName}</value>
+                </property>
+                <property>
+                    <name>yesterday</name>
+                    <value>${coord:formatTime(coord:dateOffset(coord:actualTime(), -1,'DAY'), "yyyyMMdd")}</value>
+                </property>
+            </configuration>
+        </workflow>
+    </action>
+</coordinator-app>

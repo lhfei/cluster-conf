@@ -1,0 +1,55 @@
+echo "export data to MySQL table PHONE_WALLPAPER_SUMMARY_OBS .... "
+sqoop export --connect jdbc:mysql://centos10-84:3306/phone_dashboard --table PHONE_WALLPAPER_SUMMARY_OBS  \
+    --export-dir hdfs://centos10-80.letv.cn:8020/apps/hive/warehouse/scloud_phone.db/phone_wallpaper_summary_obs_bk --validate --input-null-string '\\N'  --input-null-non-string '\\N' \
+    --username scloud-dev -password {MY_PASSWORD} --input-fields-terminated-by "\t"
+
+
+
+sqoop export --connect jdbc:mysql://centos10-84:3306/phone_dashboard --table PHONE_WALLPAPER_SUMMARY_OBS \
+    --query "select * from scloud_phoe.phone_wallpaper_summary_obs_bk where summary_date=20151123 " \
+    --username scloud-dev -password {MY_PASSWORD} --input-fields-terminated-by "\t"
+
+
+
+
+sqoop export --connect jdbc:mysql://centos10-84:3306/phone_dashboard --table PHONE_TABS_CLICK_SUMMARY  \
+    --export-dir hdfs://centos10-80.letv.cn:8020/apps/hive/warehouse/scloud_phone.db/phone_tabs_click_summary --validate --input-null-string '\\N'  --input-null-non-string '\\N' \
+    --username scloud-dev -password {MY_PASSWORD} --input-fields-terminated-by "\t"
+
+
+sqoop import  --connect jdbc:mysql://10.200.93.232:3311/iptv  \
+  --username iptv -password TVcld800g80 \
+  --table Box \
+  --hive-table tv_iptv.box_base \
+  --hive-partition-key dt \
+  --hive-partition-value 20151126 \
+  --target-dir hdfs://centos10-80.letv.cn:8020/user/cloudland/tv/tv_iptv.db/box_base/dt=20151126
+
+sqoop import  --connect jdbc:mysql://10.200.93.232:3311/iptv  \
+  --username iptv -password TVcld800g80 \
+  --table BoxGroup \
+  --hive-table tv_iptv.box_group \
+  --hive-partition-key dt \
+  --hive-partition-value 20151126 \
+  --target-dir hdfs://centos10-80.letv.cn:8020/user/cloudland/tv/tv_iptv.db/box_group/dt=20151126
+
+sqoop import  --connect jdbc:mysql://10.200.93.232:3311/iptv  \
+  --username iptv -password TVcld800g80 \
+  --table BoxMode \
+  --hive-table tv_iptv.box_mode \
+  --hive-partition-key dt \
+  --hive-partition-value 20151126 \
+  --target-dir hdfs://centos10-80.letv.cn:8020/user/cloudland/tv/tv_iptv.db/box_mode/dt=20151126
+
+
+LOAD DATA INPATH 'hdfs://centos10-80.letv.cn:8020/user/cloudland/Box/part-m-*' INTO TABLE tv_iptv.box_base PARTITION (dt=20151126);
+
+LOAD DATA INPATH 'hdfs://centos10-80.letv.cn:8020/user/cloudland/tv/tv_iptv.db/box_group/dt=20151126/part-m-*' INTO TABLE tv_iptv.box_group PARTITION (dt=20151126);
+
+LOAD DATA INPATH 'hdfs://centos10-80.letv.cn:8020/user/cloudland/tv/tv_iptv.db/box_mode/dt=20151126/part-m-*' INTO TABLE tv_iptv.box_mode PARTITION (dt=20151126);
+
+
+
+
+
+ALTER TABLE box_base DROP PARTITION dt IGNORE PROTECTION;

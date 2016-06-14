@@ -1,0 +1,6 @@
+basic.internal.hadoop.10-148-10-80.scloud.letv.com
+basic.internal.hadoop.10-148-10-81.scloud.letv.com
+basic.internal.hadoop.10-148-10-82.scloud.letv.com
+basic.internal.hadoop.10-148-10-83.scloud.letv.com
+basic.internal.hadoop.10-148-10-84.scloud.letv.com
+

@@ -1,0 +1,37 @@
+<!--
+	RSYNC data.
+	@param rsyncScriptPath:
+	@param focusNodeLogin:
+
+	@since: Dec.29, 2015
+	@author: Hefei Li
+-->
+<workflow-app name="rsync-hdfs-wf" xmlns="uri:oozie:workflow:0.1">
+    <start to="rsync-action"/>
+    <action name="rsync-action">
+        <ssh xmlns="uri:oozie:ssh-action:0.1">
+            <host>${focusNodeLogin}</host>
+	    <command>su cloudland ${rsyncScriptPath}</command>
+            <capture-output/>
+        </ssh>
+		
+		<ok to="call-export-collect"/>
+        <error to="killAction"/>
+    </action>
+	
+	<action name="call-export-collect">
+        <ssh xmlns="uri:oozie:ssh-action:0.1">
+            <host>${focusNodeLogin}</host>
+	    <command>su cloudland ${collectScriptPath}</command>
+            <capture-output/>
+        </ssh>
+		
+		<ok to="end"/>
+        <error to="killAction"/>
+    </action>
+
+    <kill name="killAction">
+        <message>"Killed job due to error"</message>
+    </kill>
+    <end name="end"/>
+</workflow-app>

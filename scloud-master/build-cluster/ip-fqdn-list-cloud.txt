@@ -1,0 +1,5 @@
+10.148.10.80 basic.internal.hadoop.10-148-10-80.scloud.letv.com centos10-80
+10.148.10.81 basic.internal.hadoop.10-148-10-81.scloud.letv.com centos10-81
+10.148.10.82 basic.internal.hadoop.10-148-10-82.scloud.letv.com centos10-82
+10.148.10.83 basic.internal.hadoop.10-148-10-83.scloud.letv.com centos10-83
+10.148.10.84 basic.internal.hadoop.10-148-10-84.scloud.letv.com centos10-84

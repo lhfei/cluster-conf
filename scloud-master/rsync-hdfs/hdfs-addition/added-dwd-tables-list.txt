@@ -1,0 +1,6 @@
+dwd_flow_sdk_phone_env_day
+dwd_flow_sdk_phone_app_usage_day
+dwd_flow_sdk_phone_event_day
+dwd_res_zhixin_phone_source_day
+dwd_flow_sdk_phone_beat_day
+dwd_flow_sdk_phone_music_play_day

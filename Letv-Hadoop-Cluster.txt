@@ -1,0 +1,152 @@
+#######################################################################################################
+# 新集群
+#######################################################################################################
+
++-----------------------------------------------------------------------------------------------------+
++ NN: 10.149.10.99
++
++ http://10.149.10.99:50070/dfshealth.html#tab-overview
++
++ Distcp: hftp://10.149.10.99:50070/
++-----------------------------------------------------------------------------------------------------+
+
+-------------------------------------------------------------------------------------------------------
+							 
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/tv_report.db/  /user/cloudland/tv/v_newer/tv_report.db
+
+# 直接同步 数据量太大
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/  /user/cloudland/phone/v_newer/data_sum.db
+--------------------------------------------------------------------------------------------------------------------------------------------
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/  /user/cloudland/phone/v_newer/data_sum.db
+--------------------------------------------------------------------------------------------------------------------------------------------
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_phone_source_day            /user/cloudland/phone/v_newer/data_sum.db								
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_phone_tags_user_day         /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_app_day           /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_app_imei_his_day  /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_app_usage_day     /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_app_user_his_day  /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_beat_day          /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_env_day           /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_event_day         /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_imei_his_day      /user/cloudland/phone/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_user_his_day      /user/cloudland/phone/v_newer/data_sum.db
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+27.2 K   hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/dmr_p2_vv_cv_pv_pt_inst_click_stup_uv_mon
+7.7 K    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/dmr_pf_vv_cv_pv_pt_inst_click_stup_uv_mon
+0        hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_cdn_playid_traffic_day
+208.3 T  hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_did_use_his
+5.1 G    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_phone_source_day
+9.1 K    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_phone_tags_kpi_f
+469.1 K  hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_phone_tags_kpi_s
+2.9 M    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_phone_tags_kpi_t
+216.9 M  hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_phone_tags_user_day
+548.6 G  hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_app_day
+8.6 G    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_app_imei_his_day
+3.4 T    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_app_usage_day
+3.7 G    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_app_user_his_day
+8.1 G    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_beat_day
+2.0 G    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_env_day
+179.4 G  hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_event_day
+0        hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_event_props_open_day
+8.7 G    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_imei_his_day
+31.6 G   hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_music_play_day
+125.1 M  hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_user_his_day
+13.2 G   hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_video_play_day
+11.2 T   hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_user_act_day
+1.8 T    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_user_login_env_day_bak
+2.4 T    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_user_play_summary_day
+2.0 T    hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_user_pv_day_bak
+122.0 G  hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_user_query_day_bak
+39.1 T   hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_user_uuid_play_day
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_event_day  /user/cloudland/tv/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_beat_day  /user/cloudland/tv/v_newer/data_sum.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.149.10.99:50070/user/hive/warehouse/data_sum.db/sum_sdk_phone_imei_his_day /user/cloudland/tv/v_newer/data_sum.db
+
+ 
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+
+
+
+#######################################################################################################
+# 老集群
+#######################################################################################################
+
++-----------------------------------------------------------------------------------------------------+
++ NN: 10.200.91.164
++
++ http://10.200.91.164:50070/dfshealth.html#tab-overview
+
++ Distcp: hftp://10.200.91.164:50070/user/jenkins/warehouse/data_sum.db/sum_sdk_phone_env_day
++-----------------------------------------------------------------------------------------------------+
+
+
+-------------------------------------------------------------------------------------------------------
+							 
+bin/hadoop distcp -update -skipcrccheck hftp://10.200.91.164:50070/user/jenkins/warehouse/tv_report.db/ /user/cloudland/tv/v_older/tv_report.db
+bin/hadoop distcp -update -skipcrccheck hftp://10.200.91.164:50070/user/jenkins/warehouse/data_sum.db/ /user/cloudland/phone/v_older/data_sum.db
+
+bin/hadoop distcp -update -skipcrccheck hftp://10.200.91.164:50070/user/jenkins/warehouse/data_sum.db/sum_sdk_phone_event_day /user/cloudland/tv/v_older/data_sum.db/sum_sdk_phone_event_day 
+bin/hadoop distcp -update -skipcrccheck hftp://10.200.91.164:50070/user/jenkins/warehouse/data_sum.db/sum_sdk_phone_beat_day /user/cloudland/tv/v_older/data_sum.db/sum_sdk_phone_beat_day
+bin/hadoop distcp -update -skipcrccheck hftp://10.200.91.164:50070/user/jenkins/warehouse/data_sum.db/sum_sdk_phone_imei_his_day /user/cloudland/tv/v_older/data_sum.db/sum_sdk_phone_imei_his_day
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+
+
+
+hftp://10.200.91.164:50070/user/jenkins/warehouse/data_sum.db/sum_sdk_phone_env_day
+
+
+
+Caused by: java.io.IOException: Check-sum mis
+
+bin/hadoop distcp -overwrite  hftp://10.200.91.164:50070/user/jenkins/warehouse/data_sum.db/sum_sdk_phone_env_day/dt=20151116/0000_0 hdfs://centos10-80.letv.cn:8020/user/cloudland/phone/data_sum/sum_sdk_phone_env_day/sum_sdk_phone_env_day/dt=20151116/
+
+
+#######################################################################################################
+# centos10-80 Cluster
+#######################################################################################################
+
++-----------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
++ NN: /letv/hadoop/hdfs/namenode,/var/hadoop/hdfs/namenode,/data/slot0/hadoop/hdfs/namenode,/data/slot1/hadoop/hdfs/namenode,/data/slot2/hadoop/hdfs/namenode,/data/slot3/hadoop/hdfs/namenode,/data/slot4/hadoop/hdfs/namenode,/data/slot5/hadoop/hdfs/namenode,/data/slot6/hadoop/hdfs/namenode,/data/slot7/hadoop/hdfs/namenode,/data/slot8/hadoop/hdfs/namenode,/data/slot9/hadoop/hdfs/namenode,/data/slota/hadoop/hdfs/namenode,/data/slotb/hadoop/hdfs/namenode
++-----------------------------------------------------------------------------------------------------+
++ DN: /letv/hadoop/hdfs/data,/var/hadoop/hdfs/data,/data/slot0/hadoop/hdfs/data,/data/slot1/hadoop/hdfs/data,/data/slot2/hadoop/hdfs/data,/data/slot3/hadoop/hdfs/data,/data/slot4/hadoop/hdfs/data,/data/slot5/hadoop/hdfs/data,/data/slot6/hadoop/hdfs/data,/data/slot7/hadoop/hdfs/data,/data/slot8/hadoop/hdfs/data,/data/slot9/hadoop/hdfs/data,/data/slota/hadoop/hdfs/data,/data/slotb/hadoop/hdfs/data
++-----------------------------------------------------------------------------------------------------+
++ Clean NN & DN data:
+
+	rm -rf /letv/hadoop/hdfs/*
+	rm -rf /var/hadoop/hdfs/*
+	rm -rf /data/slot0/hadoop/hdfs/*
+	rm -rf /data/slot1/hadoop/hdfs/*
+	rm -rf /data/slot2/hadoop/hdfs/*
+	rm -rf /data/slot3/hadoop/hdfs/*
+	rm -rf /data/slot4/hadoop/hdfs/*
+	rm -rf /data/slot5/hadoop/hdfs/*
+	rm -rf /data/slot6/hadoop/hdfs/*
+	rm -rf /data/slot7/hadoop/hdfs/*
+	rm -rf /data/slot8/hadoop/hdfs/*
+	rm -rf /data/slot9/hadoop/hdfs/*
+	rm -rf /data/slota/hadoop/hdfs/*
+	rm -rf /data/slotb/hadoop/hdfs/*
+
++-----------------------------------------------------------------------------------------------------+
+

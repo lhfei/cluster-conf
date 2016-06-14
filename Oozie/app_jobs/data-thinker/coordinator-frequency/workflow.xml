@@ -1,0 +1,23 @@
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="coord-distcp-wf">
+    <start to="distcp-node"/>
+    <action name="distcp-node">
+        <distcp xmlns="uri:oozie:distcp-action:0.2">
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <arg>${from}</arg>
+            <arg>${to}/${YEAR}/${MONTH -1}/${DAY}/${HOUR}/${MINUTE}/data.txt</arg>
+            </distcp>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+    <kill name="fail">
+        <message>DistCP failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+    <end name="end"/>
+</workflow-app>

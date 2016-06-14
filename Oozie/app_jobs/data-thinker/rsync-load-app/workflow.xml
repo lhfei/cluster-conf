@@ -1,0 +1,26 @@
+<workflow-app xmlns="uri:oozie:workflow:0.4" name="rsync-load-app">
+  <start to="distcp-node"/>
+  <action name="distcp-node">
+      <distcp xmlns="uri:oozie:distcp-action:0.1">
+          <job-tracker>${jobTracker}</job-tracker>
+          <name-node>${nameNode}</name-node>
+          <prepare>
+              <delete path="${nameNode}/user/${wf:user()}/${examplesRoot}/output-data/dim_cms_tj_list/${yesterday}"/>
+          </prepare>
+          <configuration>
+              <property>
+                  <name>mapred.job.queue.name</name>
+                  <value>${queueName}</value>
+              </property>
+          </configuration>
+          <arg>hftp://10.149.10.99:50070/user/hive/warehouse/dim.db/dim_cms_tj_list/dt=${yesterday}</arg>
+          <arg>${nameNode}/user/${wf:user()}/${examplesRoot}/output-data/dim_cms_tj_list/${yesterday}/</arg>
+      </distcp>
+      <ok to="end"/>
+      <error to="fail"/>
+  </action>  
+  <kill name="fail">
+    <message>mkdir failed, error message [${wf:errorMessage(wf:lastErrorNode())}]</message>
+  </kill>
+  <end name="end"/>
+</workflow-app>
