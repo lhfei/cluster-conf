@@ -1,0 +1,251 @@
+{
+  "interpreterSettings": {
+    "2CKAY1A8Y": {
+      "status": "READY", 
+      "group": "md", 
+      "name": "md", 
+      "id": "2CKAY1A8Y", 
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.markdown.Markdown", 
+          "editor": {
+            "editOnDblClick": true, 
+            "language": "markdown"
+          }, 
+          "name": "md", 
+          "defaultInterpreter": false
+        }
+      ], 
+      "dependencies": [], 
+      "properties": {
+        "markdown.parser.type": "pegdown"
+      }, 
+      "option": {
+        "setPermission": false, 
+        "remote": true, 
+        "users": [], 
+        "isExistingProcess": false, 
+        "perUser": "shared", 
+        "isUserImpersonate": false, 
+        "perNote": "shared", 
+        "port": -1
+      }
+    }, 
+    "2C4U48MY3_spark2": {
+      "status": "READY", 
+      "group": "spark", 
+      "name": "spark2", 
+      "properties": {
+        "zeppelin.dep.additionalRemoteRepository": "spark-packages,http://dl.bintray.com/spark-packages/maven,false;", 
+        "spark.yarn.principal": "zeppelin-pss_cloud_dev@POLARIS.JD.COM", 
+        "args": "", 
+        "zeppelin.spark.printREPLOutput": "true", 
+        "zeppelin.R.image.width": "100%", 
+        "zeppelin.spark.importImplicit": "true", 
+        "zeppelin.spark.useHiveContext": "true", 
+        "spark.cores.max": "", 
+        "zeppelin.spark.sql.stacktrace": "false", 
+        "spark.app.name": "Zeppelin", 
+        "spark.yarn.keytab": "/etc/security/keytabs/zeppelin.server.kerberos.keytab", 
+        "zeppelin.R.cmd": "R", 
+        "master": "yarn-client", 
+        "zeppelin.pyspark.python": "python", 
+        "zeppelin.R.knitr": "true", 
+        "SPARK_HOME": "/usr/hdp/current/spark2-client/", 
+        "zeppelin.R.render.options": "out.format = 'html', comment = NA, echo = FALSE, results = 'asis', message = F, warning = F", 
+        "spark.executor.memory": "", 
+        "zeppelin.spark.concurrentSQL": "false", 
+        "zeppelin.dep.localrepo": "local-repo", 
+        "zeppelin.spark.maxResult": "1000"
+      }, 
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.spark.SparkInterpreter", 
+          "defaultInterpreter": true, 
+          "name": "spark"
+        }, 
+        {
+          "class": "org.apache.zeppelin.spark.SparkSqlInterpreter", 
+          "defaultInterpreter": false, 
+          "name": "sql"
+        }, 
+        {
+          "class": "org.apache.zeppelin.spark.DepInterpreter", 
+          "defaultInterpreter": false, 
+          "name": "dep"
+        }, 
+        {
+          "class": "org.apache.zeppelin.spark.PySparkInterpreter", 
+          "defaultInterpreter": false, 
+          "name": "pyspark"
+        }, 
+        {
+          "class": "org.apache.zeppelin.spark.SparkRInterpreter", 
+          "defaultInterpreter": false, 
+          "name": "r"
+        }
+      ], 
+      "dependencies": [], 
+      "id": "2C4U48MY3_spark2", 
+      "option": {
+        "setPermission": false, 
+        "perNoteProcess": false, 
+        "remote": true, 
+        "perNoteSession": false, 
+        "isExistingProcess": false, 
+        "port": -1
+      }
+    }, 
+    "2CHS8UYQQ": {
+      "status": "READY", 
+      "group": "sh", 
+      "name": "sh", 
+      "id": "2CHS8UYQQ", 
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.shell.ShellInterpreter", 
+          "editor": {
+            "editOnDblClick": false, 
+            "language": "sh"
+          }, 
+          "name": "sh", 
+          "defaultInterpreter": false
+        }
+      ], 
+      "dependencies": [], 
+      "properties": {
+        "shell.command.timeout.millisecs": "60000", 
+        "zeppelin.shell.auth.type": "KERBEROS", 
+        "zeppelin.shell.keytab.location": "/etc/security/keytabs/zeppelin.server.kerberos.keytab", 
+        "zeppelin.shell.principal": "zeppelin-pss_cloud_dev@POLARIS.JD.COM"
+      }, 
+      "option": {
+        "setPermission": false, 
+        "remote": true, 
+        "users": [], 
+        "isExistingProcess": false, 
+        "perUser": "shared", 
+        "isUserImpersonate": false, 
+        "perNote": "shared", 
+        "port": -1
+      }
+    }, 
+    "2CK8A9MEG": {
+      "status": "READY", 
+      "group": "jdbc", 
+      "name": "jdbc", 
+      "id": "2CK8A9MEG", 
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.jdbc.JDBCInterpreter", 
+          "editor": {
+            "editOnDblClick": false, 
+            "language": "sql"
+          }, 
+          "name": "sql", 
+          "defaultInterpreter": false
+        }
+      ], 
+      "dependencies": [], 
+      "properties": {
+        "common.max_count": "1000", 
+        "phoenix.driver": "org.apache.phoenix.jdbc.PhoenixDriver", 
+        "hive.user": "hive", 
+        "default.driver": "org.postgresql.Driver", 
+        "zeppelin.jdbc.keytab.location": "/etc/security/keytabs/zeppelin.server.kerberos.keytab", 
+        "phoenix.splitQueries": "true", 
+        "phoenix.hbase.client.retries.number": "1", 
+        "phoenix.password": "", 
+        "default.password": "", 
+        "hive.splitQueries": "true", 
+        "zeppelin.jdbc.concurrent.use": "true", 
+        "zeppelin.jdbc.concurrent.max_connection": "10", 
+        "phoenix.url": "jdbc:phoenix:a01-r03-i164-156-515w9ay.jd.local,a01-r03-i164-159-515w64k.jd.local,a01-r03-i164-157-515w8ey.jd.local:/hbase-secure", 
+        "default.user": "gpadmin", 
+        "hive.url": "jdbc:hive2://a01-r03-i164-159-515w64k.jd.local:2181,a01-r03-i164-157-515w8ey.jd.local:2181,a01-r03-i164-156-515w9ay.jd.local:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2", 
+        "hive.password": "", 
+        "zeppelin.jdbc.principal": "zeppelin-pss_cloud_dev@POLARIS.JD.COM", 
+        "phoenix.user": "phoenixuser", 
+        "hive.driver": "org.apache.hive.jdbc.HiveDriver", 
+        "zeppelin.jdbc.auth.type": "KERBEROS", 
+        "hive.proxy.user.property": "hive.server2.proxy.user", 
+        "default.url": "jdbc:postgresql://localhost:5432/"
+      }, 
+      "option": {
+        "setPermission": false, 
+        "remote": true, 
+        "users": [], 
+        "isExistingProcess": false, 
+        "perUser": "shared", 
+        "isUserImpersonate": false, 
+        "perNote": "shared", 
+        "port": -1
+      }
+    }, 
+    "2CKEKWY8Z": {
+      "status": "READY", 
+      "group": "angular", 
+      "name": "angular", 
+      "id": "2CKEKWY8Z", 
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.angular.AngularInterpreter", 
+          "editor": {
+            "editOnDblClick": true
+          }, 
+          "name": "angular", 
+          "defaultInterpreter": false
+        }
+      ], 
+      "dependencies": [], 
+      "properties": {}, 
+      "option": {
+        "setPermission": false, 
+        "remote": true, 
+        "users": [], 
+        "isExistingProcess": false, 
+        "perUser": "shared", 
+        "isUserImpersonate": false, 
+        "perNote": "shared", 
+        "port": -1
+      }
+    }
+  }, 
+  "interpreterBindings": {}, 
+  "interpreterRepositories": [
+    {
+      "releasePolicy": {
+        "checksumPolicy": "warn", 
+        "enabled": true, 
+        "updatePolicy": "daily"
+      }, 
+      "mirroredRepositories": [], 
+      "snapshotPolicy": {
+        "checksumPolicy": "warn", 
+        "enabled": true, 
+        "updatePolicy": "daily"
+      }, 
+      "url": "http://repo1.maven.org/maven2/", 
+      "repositoryManager": false, 
+      "type": "default", 
+      "id": "central"
+    }, 
+    {
+      "releasePolicy": {
+        "checksumPolicy": "warn", 
+        "enabled": true, 
+        "updatePolicy": "daily"
+      }, 
+      "mirroredRepositories": [], 
+      "snapshotPolicy": {
+        "checksumPolicy": "warn", 
+        "enabled": true, 
+        "updatePolicy": "daily"
+      }, 
+      "url": "file:///home/zeppelin/.m2/repository", 
+      "repositoryManager": false, 
+      "type": "default", 
+      "id": "local"
+    }
+  ]
+}
