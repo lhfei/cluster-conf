@@ -88,9 +88,9 @@ JAVA_HOME=/usr/java/jdk1.8.0_73
 JRE_HOME=$JAVA_HOME/jre
 
 SCALA_HOME=/usr/local/cloud/scala-2.11.8
-#######################
+#####################################################
 # HDP Suites
-######################
+#####################################################
 HDP_ROOT=/usr/hdp/2.4.0.0-169
 
 HADOOP_HOME=$HDP_ROOT/hadoop
@@ -106,7 +106,7 @@ FLUME_HOME=$HDP_ROOT/flume
 
 HDP_SUITES_HOME=$HADOOP_HOME/bin:$SPARK_HOME/bin:$HIVE_HOME/bin:$HBASE_HOME/bin:$ZOOKEEPER_HOME/bin:$SQOOP_HOME/bin:$STORM_HOME/bin:$KAFKA_HOME/bin:$OOZIE_HOME/bin:$FLUME_HOME/bin 
 
-#### HDP_SUITES_HOME End ####
+#### HDP_SUITES_HOME End ############################
 
 
 # Builts Home 
